@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-1: #fffaf7;
+    --bg-2: #fff0e6;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    /* Use theme() inside @layer so Tailwind resolves color values */
+    background-image: linear-gradient(to bottom, theme('colors.cafe.50'), theme('colors.roast.50'));
+    color: theme('colors.roast.800');
+    font-family: theme('fontFamily.body');
+  }
+
+  .container-wide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-bg {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* small utility for card */
+  .card-shadow {
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+  }
+}
+

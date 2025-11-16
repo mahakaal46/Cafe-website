@@ -1,0 +1,9 @@
+/* Minimal per-component CSS if needed */
+.btn-ghost {
+  background: transparent;
+}
+
+.rounded-media {
+  border-radius: 0.5rem;
+}
+
